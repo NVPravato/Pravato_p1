@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Encrypter {
+/* //USER PROMPT MOVED TO MAIN CLASS
+
 
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
@@ -35,7 +37,7 @@ public class Encrypter {
         String numberString = scan.nextLine();
         return numberString;
     }
-
+*/ //USER PROMPT MOVED TO MAIN CLASS
     public String encrypt(String numberString){
         int number = Integer.parseInt(numberString);
         int d1 = getd1(number);
@@ -53,11 +55,15 @@ public class Encrypter {
         //printEncrypt(d1, d2, d3, d4);
 
         //mod by 10
-        //System.out.println("dividing by 10");
+        //System.out.println("modding by 10");
+        //System.out.println(d1 + " " + d2 + " " + d3 + " " + d4);
+
         d1 %= 10;
         d2 %= 10;
         d3 %= 10;
         d4 %= 10;
+        //System.out.println(d1 + d2 + d3 + d4);
+        //System.out.println("modded by 10");
         //printEncrypt(d1, d2, d3, d4);
 
         //swap 1&3 and 2&4
@@ -80,7 +86,7 @@ public class Encrypter {
             //System.out.println("HERE!!");
             encryptedNumberString = "0" + encryptedNumberString;
         }
-        //printEncrypt(encryptedNumberString);
+        //printEncrypt(encryptedNumberString); //no longer needed
         return encryptedNumberString;
     }
 /*
@@ -121,6 +127,8 @@ public class Encrypter {
     }
 */
 
+
+    /* //no longer needed
     public static void printEncrypt(String encryptedNumber){
         System.out.println("Your Encrypted Number: " + encryptedNumber);
     }
@@ -139,7 +147,9 @@ public class Encrypter {
         }
 
     }
+*/ //no longer needed
 
+    //gets the digits from the 4-digit number (d1 = digit 1, and so on)
     public static int getd1(int num){
         return num / 1000;
     }
@@ -178,12 +188,14 @@ public class Encrypter {
         }
         */
     }
+
+    /*
     public static void errorMessage(String typed){
 
         System.out.println("Sorry, I don't understand " + "\"" + typed + "\", please try again");
         prompt();
 
     }
-
+*/
 
 }
