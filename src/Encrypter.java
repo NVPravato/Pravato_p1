@@ -21,7 +21,7 @@ public class Encrypter {
         if(answer.equalsIgnoreCase("encrypt") || answer.equalsIgnoreCase("e")){
             //enterNum(1);
             Encrypter enc = new Encrypter();
-            enc.encrypt(getNumberString());
+            System.out.println(enc.encrypt(getNumberString()));
         }else if(answer.equalsIgnoreCase("decrypt") || answer.equalsIgnoreCase("d")){
             //decrypt(answer);
         }else{
@@ -36,7 +36,7 @@ public class Encrypter {
         return numberString;
     }
 
-    public void encrypt(String numberString){
+    public String encrypt(String numberString){
         int number = Integer.parseInt(numberString);
         int d1 = getd1(number);
         int d2 = getd2(number);
@@ -80,7 +80,8 @@ public class Encrypter {
             //System.out.println("HERE!!");
             encryptedNumberString = "0" + encryptedNumberString;
         }
-        printEncrypt(encryptedNumberString);
+        //printEncrypt(encryptedNumberString);
+        return encryptedNumberString;
     }
 /*
     public void encrypt(int d1, int d2, int d3, int d4){
