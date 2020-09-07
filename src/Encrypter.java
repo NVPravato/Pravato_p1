@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Encrypter {
+    
 /* //USER PROMPT MOVED TO MAIN CLASS
 
 
@@ -44,7 +45,7 @@ public class Encrypter {
         int d2 = getd2(number);
         int d3 = getd3(number);
         int d4 = getd4(number);
-        System.out.println("Your Number: " + d1 + d2 + d3 + d4);
+        //System.out.println("Your Number: " + d1 + d2 + d3 + d4);
         int temp = 0;
         //add 7
         //System.out.println("adding 7");

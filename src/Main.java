@@ -22,13 +22,13 @@ public class Main {
         if(answer.equalsIgnoreCase("encrypt") || answer.equalsIgnoreCase("e")){
 
             Encrypter enc = new Encrypter();
-            System.out.println(enc.encrypt(getNumberString()));
+            System.out.println("Your Encrypted Number: " + enc.encrypt(getNumberString()));
             //String encryptedValue = enc.encrypt("1234");
             //System.out.println("Your encrypted number: " + encryptedValue);
         }else if(answer.equalsIgnoreCase("decrypt") || answer.equalsIgnoreCase("d")){
 
             Decrypter dec = new Decrypter();
-            System.out.println(dec.decrypt(getNumberString()));
+            System.out.println(dec.decrypt("Your Decrypted Number: " + getNumberString()));
         }else{
             errorMessage(answer);
         }
