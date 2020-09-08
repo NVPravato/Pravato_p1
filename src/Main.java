@@ -28,7 +28,7 @@ public class Main {
         }else if(answer.equalsIgnoreCase("decrypt") || answer.equalsIgnoreCase("d")){
 
             Decrypter dec = new Decrypter();
-            System.out.println(dec.decrypt("Your Decrypted Number: " + getNumberString()));
+            System.out.println("Your Decrypted Number: " + dec.decrypt(getNumberString()));
         }else{
             errorMessage(answer);
         }
